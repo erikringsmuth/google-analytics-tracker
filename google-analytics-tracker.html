@@ -1,0 +1,13 @@
+<script src="//www.google-analytics.com/analytics.js"></script>
+<script>
+  (function() {
+    var GoogleAnalytitcsTracker = Object.create(HTMLElement.prototype);
+    GoogleAnalytitcsTracker.createdCallback = function() {
+      ga('create', this.getAttribute('code'), 'auto');
+      ga('send', 'pageview');
+    };
+    document.registerElement('google-analytics-tracker', {
+      prototype: GoogleAnalytitcsTracker
+    });
+  })();
+</script>
