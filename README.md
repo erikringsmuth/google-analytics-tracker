@@ -1,21 +1,20 @@
 ## Google Analytics Tracker
+> Track page views with Google Analytics
 
-Track your page views.
+[Download](https://github.com/erikringsmuth/google-analytics-tracker/archive/master.zip) or run `bower install google-analytics-tracker --save`
 
-1. [Download](https://github.com/erikringsmuth/google-analytics-tracker/archive/master.zip) or run `bower install google-analytics-tracker --save`
-
-2. Import
-```
+Import
+```html
 <link rel="import" href="/bower_components/google-analytics-tracker/google-analytics-tracker.html">
 ```
 
-3. Track page views with your tracking code
-```
+Set your tracking code
+```html
 <google-analytics-tracker code="UA-12345678-1"></google-analytics-tracker>
 ```
 
-Versus the inline script.
-```
+Versus the inline script
+```html
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
