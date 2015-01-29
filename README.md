@@ -12,3 +12,8 @@ Set your tracking code
 ```html
 <google-analytics-tracker code="UA-12345678-1"></google-analytics-tracker>
 ```
+
+Additional tracking features can be added also
+```html
+<google-analytics-tracker code="UA-12345678-1" requires="displayfeatures"></google-analytics-tracker>
+```
