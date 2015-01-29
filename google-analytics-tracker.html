@@ -9,6 +9,12 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
       ga('create', this.getAttribute('code'), 'auto');
+      if(this.hasAttribute('requires')) {
+        var requireArr = this.getAttribute('requires').split(',');
+        for(r in requireArr) {
+          ga('require', r);
+        }        
+      }
       ga('send', 'pageview');
     };
 
