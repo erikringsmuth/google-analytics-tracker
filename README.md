@@ -13,7 +13,7 @@ Set your tracking code
 <google-analytics-tracker code="UA-12345678-1"></google-analytics-tracker>
 ```
 
-Additional tracking features can be added also
+Additional tracking features can be added using the `requires` attribute
 ```html
-<google-analytics-tracker code="UA-12345678-1" requires="displayfeatures"></google-analytics-tracker>
+<google-analytics-tracker code="UA-12345678-1" requires="displayfeatures,demographics"></google-analytics-tracker>
 ```
